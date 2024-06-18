@@ -1,0 +1,220 @@
+@media screen and (max-width: 390px) {
+    .span{
+        display: block;
+    }
+    .header-item{
+        display: none;
+    }
+    .header-checkbox:checked ~ .header-item-container > .header-item{
+        display: block;
+    }
+    .checkbox:checked ~ .label > .span{
+        background-color: transparent;
+    }
+    .checkbox:checked ~ .label > .span::after{
+        transform: rotate(-45deg);
+        top: 1px;
+    }
+    .checkbox:checked ~ .label > .span::before{
+        transform: rotate(45deg);
+        top: 1px;
+    }
+    .header-checkbox:checked ~ .header-item-container{
+        display: flex;
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 80px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header-checkbox:checked ~ .header-label{
+        position: absolute;
+        left: 350px;
+        top: 35px;
+    }
+    .header-label{
+        margin-right: 50px;
+    }
+    .rect{
+        display: none;
+    }
+    .rect2{
+        display: none;
+    }
+    .header-line{
+        color: #FFA4FB;
+        height: 10px;
+    }
+    /* home-page */
+    .home-container{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+        border-bottom: 10px solid #FFA4FB;
+    }
+    .home-image{
+        width: 132px;
+        height: 293px;
+    }
+    .home-title{
+        font-size: 32px;
+        width: 321px;
+    }
+    .home-subtitle{
+        font-size: 24px;
+        width: 188px;
+    }
+    /* my-info */
+    .my-info{
+        grid-template-columns: 100%;
+        grid-template-rows: 30px repeat(4, 50px) 117px 428px;
+        grid-template-areas: "info-title" "info1" "info2" "info3" "info4" "ch-container" "info-image";
+        grid-row-gap: 17px;
+    }
+    .my-info-image{
+        width: 226px;
+        height: 428px;
+        margin: 0 auto;
+    }
+    .my-info-title{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .my-info-information{
+        font-size: 20px;
+        text-align: center;
+    }
+    .my-info-character-container{
+        padding: 11px 9px;
+    }
+    .my-info-character{
+        font-size: 20px;
+    }
+    /* my-projects */
+    .my-projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-bottom: 20px;
+        border-bottom: 10px solid #FFA4FB;
+        max-width: 390px;
+    }
+    .my-projects-title{
+        font-size: 36px;
+    }
+    .project-card{
+        width: 390px;
+        margin-right: 50px;
+    }
+    .project-image{
+        width: 288px;
+        height: 214px;
+    }
+    .cards-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 69px;
+    }
+    .label{
+        font-size: 36px;
+    }
+    .input-text , .input-text2 , .input-text3 , .input-text4 , .input-text5 , .input-text6{
+        font-size: 36px;
+        font-family: 'Maven Pro';
+    }
+    /* Skills */
+    .skills{
+        display: block;
+        margin-top: 34px;
+        padding-bottom: 33px;
+        border-bottom: 10px solid #FFA4FB;
+        height: auto;
+    }
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .skills-line{
+        display: block;
+        background: #FFA4FB;
+        height: 10px;
+        width: 390px;
+        margin-top: 33px;
+    }
+    .soft-skills-container{
+        margin-top: 50px;
+    }
+    .soft-skills-title, .hard-skills-title{
+        font-size: 36px;
+        text-align: center;
+    }
+    .soft-skills-item, .hard-skills-item, .css-item{
+        font-size: 24px;
+    }
+    .rect3{
+        display: none;
+    }
+    /* contact me */
+    .contact-me{
+        margin-top: 33px;
+        display: block;
+    }
+    .contact-title{
+        font-size: 36px;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 27px;
+        margin-bottom: 59px;
+    }
+    .name, .email, .subject, .message{
+        height: 35px;
+        width: 353px;
+        font-size: 16px;
+    }
+    .contact-button{
+        height: 74px;
+        width: 171px;
+        font-size: 20px;
+    }
+    .contact-number{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .contact-telegram{
+        width: 120px;
+        height: 120px;
+        margin-left: 36px;
+    }
+    .contact-github{
+        height: 120px;
+        width: 123px;
+    }
+    .contact-email{
+        font-size: 24px;
+        margin-left: 29px;
+        margin-top: 30px;
+    }
+    /* footer */
+    .footer{
+        height: 158px;
+        margin-top: 50px;
+        font-family: 'Maven Pro';
+    }
+    .footer-title{
+        font-size: 24px;
+    }
+}

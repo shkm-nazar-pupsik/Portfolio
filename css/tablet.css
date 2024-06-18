@@ -1,0 +1,64 @@
+@media screen and (max-width:1024px) and (min-width:391px){
+    .container{
+        max-width: 1024px;
+    }
+    .header{
+        max-width: 1024px;
+        width: 100%;
+        margin: 25px;
+        grid-template-columns: 10% 65%;
+        grid-column-gap: 200px;
+        justify-content: start;
+    }
+    .rect{
+        left: -120px;
+    }
+    .rect2{
+        top: 100px;
+        left: 90px;
+        max-width: 1000px;
+        width: 93%;
+    }
+    /* my-info */
+    .my-info{
+        grid-template-rows: 54px 90px 90px 183px 495px;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-areas: ". info-title ." "info1 . info2" "info3 . info4" "ch-container ch-container ch-container" ". info-image .";
+        grid-row-gap: 70px;
+        max-width: 1024px;
+    }
+    .my-info-title{
+        text-align: center;
+    }
+    /* projects */
+    .project-image{
+        width: 375px;
+        height: 243px;
+    }
+    /* skills */
+    .rect3{
+        width: 1020px;
+    }
+    /* contact */
+    .contact-me{
+        margin-bottom: 250px;
+        grid-column-gap: 30px;
+    }
+    .form-container{
+        grid-template-rows: repeat(3, 82px) 237px 82px;
+        grid-template-columns: 534px;
+        grid-template-areas: "name name" "email email" "subject subject" "message message" "button .";
+    }
+    .contact-number{
+        font-size: 45px;
+        margin-bottom: 108px;
+    }
+    .contact-email{
+        font-size: 25px;
+    }
+    .contact-telegram , .contact-github{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 122px;
+    }
+}

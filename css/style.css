@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+p , h1 , h2 , h3 , a , li{
+    color: white;
+}
+/* header */
+.rect2{
+    width: 1215px;
+}
+.header{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 10% 60%;
+    position: relative;
+    column-gap: 10px;
+    max-width: 1152px;
+    grid-template-rows: repeat(1, 100%);
+    justify-content: space-between;
+}
+.header-link-container{
+    display: flex;
+    align-items: center;
+}
+.header-item-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-item{
+    list-style-type: none;
+}
+.header-checkbox{
+    display: none;
+}
+.span{
+	width: 30px;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+    display: none;
+}
+.span::after{
+	content: '';
+	width: 30px;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	top: -8px;
+}
+.span::before{
+	content: '';
+	width: 30px;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	top: 8px;	
+}
+.header-logo{
+    width: 86px;
+    height: 69px;
+}
+.rect{
+    position: absolute;
+}
+.rect2{
+    position: absolute;
+    left: 300px;
+    top: 40px;
+    width: 80%;
+}
+.header-link{
+    font-family: 'Maven Pro';
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+}
+.header-line{
+    display: none;
+}
+/* home-container */
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.home-title-container{
+    margin-left: 34px;
+}
+.home-title{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+    width: 650px;
+    margin-bottom: 6px;
+}
+.home-subtitle{
+    font-family: 'Maven Pro';
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 7px;
+    color: #FFA4FB;
+    width: 348px;
+}
+/* my info */
+.my-info{
+    width: 90%;
+    margin: 70px auto 0px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 100px) 185px;
+    grid-template-columns: 370px repeat(2, 320px);
+    grid-template-areas: "info-image info-title ." "info-image info1 info2" "info-image info3 info4" "info-image ch-container ch-container";
+    grid-row-gap: 32px 45px 43px;
+    grid-column-gap: 40px;
+    position: relative;
+}
+.my-info-image{
+    grid-area: info-image;
+    margin-right: 50px;
+}
+.my-info-title{
+    grid-area: info-title;
+    font-family: 'Maven Pro';
+    font-size: 48px;
+    font-weight: bold;
+}
+.my-info-information{
+    font-family: 'Maven Pro';
+    font-size: 32px;
+    font-weight: bold;
+}
+.info1{
+    grid-area: info1;
+}
+.info2{
+    grid-area: info2;
+}
+.info3{
+    grid-area: info3;
+}
+.info4{
+    grid-area: info4;
+}
+.my-info-character-container{
+    grid-area: ch-container;
+    background: #8D3A8A;
+    padding: 23px 24px;
+}
+.my-info-character{
+    font-family: 'Maven Pro';
+    font-size: 32px;
+    font-weight: bold;
+}
+/* my projects */
+.my-projects{
+    margin-top: 50px;
+}
+.checkbox , .checkbox2 , .checkbox3 , .checkbox4 , .checkbox5 , .checkbox6{
+	display: none;
+}
+.input-text , .input-text2 , .input-text3 , .input-text4 , .input-text5 , .input-text6{
+	display: none;
+}
+.checkbox:checked ~ .input-text{
+	display: block;
+}
+.checkbox2:checked ~ .input-text2{
+	display: block;
+}
+.checkbox3:checked ~ .input-text3{
+	display: block;
+}
+.checkbox4:checked ~ .input-text4{
+	display: block;
+}
+.checkbox5:checked ~ .input-text5{
+	display: block;
+}
+.checkbox6:checked ~ .input-text6{
+	display: block;
+}
+.label{
+    color: gray;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 50px;
+}
+.my-projects-title{
+    font-family: 'Maven Pro';
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.project-image{
+    width: 520px;
+    height: 358px;
+}
+.cards-container{
+    margin-left: 58px;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(3, 579px);
+    grid-column-gap: 48px;
+    grid-row-gap: 135px;
+}
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-title{
+    font-family: 'Maven Pro';
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 92px;
+}
+/* skills */
+.skills{
+    position: relative;
+    height: 800px;
+}
+.skills-title{
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+}
+.skills-container{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 254px;
+}
+li{
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 36px;
+}
+.skills-line{
+    display: none;
+}
+.hard-skills-css{
+    margin-left: 50px;
+}
+.soft-skills-container{
+    padding: 0 10%;
+}
+.hard-skills-title , .soft-skills-title{
+    font-size: 48px;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.rectangle3{
+    position: absolute;
+}
+/* contact me */
+.contact-me{
+    display: grid;
+    grid-template-rows: 60px 500px;
+    grid-template-columns: 60% 40%;
+    grid-row-gap: 75px;
+}
+.contact-title{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Maven Pro';
+    font-size: 64px;
+    grid-area: 1 / 1 / 2 / 3;
+}
+.form-container{
+    display: grid;
+    grid-template-rows: repeat(4, 82px);
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(2, 285px);
+    grid-column-gap: 98px;
+    grid-area: 2 / 1 / 3 / 2;
+    grid-template-areas: "name name" "email subject" "message message" "button .";
+}
+.name{
+    grid-area: name;
+    background: #2C2A2A;
+    color: white;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 36px;
+}
+.email{
+    grid-area: email;
+    background: #2C2A2A;
+    color: white;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 36px;
+}
+.subject{
+    grid-area: subject;
+    background: #2C2A2A;
+    color: white;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 36px;
+}
+.message{
+    grid-area: message;
+    background: #2C2A2A;
+    color: white;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 36px;
+}
+.contact-button{
+    grid-area: button;
+    background: #8D3A8A;
+    color: white;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 36px;
+}
+.contact-number{
+    font-size: 60px;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+}
+.contact-email{
+    font-size: 36px;
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    text-decoration: none;
+}
+.contact-github{
+    margin-left: 80px;
+}
+/* footer */
+.footer{
+    background: #8D3A8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 233px;
+}
+.footer-title{
+    font-family: 'Maven Pro';
+    font-size: 64px;
+    font-family: bold;
+}
